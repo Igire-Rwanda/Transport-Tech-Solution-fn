@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.all{
+    background: wheat;
+}
+.box{
+    background: white;
+    z-index: 0;
+}
+.blue{
+    background-color: rgb(17, 17, 56);
+    z-index: 1;
+}
+.left{
+    background-color: white;
+    z-index: 0;
+}
+.red{
+    background-color: rgb(17, 17, 56);
+    z-index: 1;
+}
