@@ -2,7 +2,7 @@ import '../navigation/NavigationBar.css'
 import { FiMenu } from 'react-icons/fi';
 import { FaTimes } from 'react-icons/fa';
 import { useState } from 'react';
-import Logo from '../image/Logo.png'
+import Logo from '../image/BUS link.png'
 
 let NavBar = () =>{
 
