@@ -4,14 +4,14 @@ import Routes from './component/routes'
 // import './App.css'
 
 // import Home from './pages/home/home'
-import NavigationBar from '../src/pages/Navigation/NavigationBar'
+import Navigation from '../src/pages/Navigation/Navigation'
 
 function App() {
   // const [count, setCount] = useState(0)
 
   return (
     <>
-      <NavigationBar/>
+      <Navigation/>
       <Router>
     <Routes></Routes>
    </Router>
