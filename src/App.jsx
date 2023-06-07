@@ -5,13 +5,14 @@ import Routes from './component/routes'
 
 import Admin from './pages/Admindashboard/admindash'
 // import Home from './pages/home/home'
+import Navigation from '../src/pages/Navigation/Navigation'
 
 function App() {
-  const [count, setCount] = useState(0)
+  // const [count, setCount] = useState(0)
 
   return (
     <>
-      {/* <Home/> */}
+      <Navigation/>
       <Router>
     <Routes></Routes>
    </Router>

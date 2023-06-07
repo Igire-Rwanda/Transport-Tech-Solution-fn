@@ -1,4 +1,4 @@
-import '../navigation/NavigationBar.css'
+import '../navigation/Navigation.css'
 import { FiMenu } from 'react-icons/fi';
 import { FaTimes } from 'react-icons/fa';
 import { useState } from 'react';
