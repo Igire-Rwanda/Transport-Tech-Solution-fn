@@ -88,6 +88,7 @@ const handleShow = (content) =>{
             }
             </div>)}
            {activate && (<div className='kicukiro-route'>
+           
             {
                 KicukiroBusStop.map((bus) =>(
                     <h2 key={bus.id}>{bus.BusStop}</h2>

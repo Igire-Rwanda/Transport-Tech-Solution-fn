@@ -109,6 +109,22 @@ export const NyarugengeBusStop = [
     {
         id:26,
         BusStop:"DownTown - Batsinda"
+    },
+    {
+        id:38,
+        BusStop:"Rya Nyuma - Nyabugogo"
+    },
+    {
+        id:39,
+        BusStop:"Nyabugogo - Batsinda"
+    },
+    {
+        id:40,
+        BusStop:"DownTown - Nyacyonga"
+    },
+    {
+        id:41,
+        BusStop:"Nyabugogo - Nyacyonga"
     }
 ]
 export const GasaboBusStop =[
