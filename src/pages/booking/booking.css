@@ -1,0 +1,115 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+  body{
+    background-color: #2A4966;
+    width: 100%;
+    height: 100vh;
+    list-style: none;
+  }
+  table{
+    width: 100%;
+    height: 100vh;
+  }
+  .container{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 0.3fr 1fr;
+
+  }
+  .table{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    padding:30px 50px;
+  }
+  .holder {
+    display: flex;
+    background-color: #B9B7B7;
+    width: 9rem;
+    border-radius: 18px;
+    padding:7px 8px;
+    position: relative;
+  
+  }
+  .box1 {
+    position: relative;
+    background-color:#ffffff;
+    border-radius: 15px;
+    padding:5px 8px;
+    top:0;
+    bottom: 0;
+    left: 0;
+  }
+  .box2 {
+    position: absolute;
+    background-color: #009AC7;
+    margin-left:60px;
+    border-radius: 15px;
+    padding:7px 14px;
+    top:0;
+    bottom: 0;
+    right:0;
+
+  
+  }
+  .deny{
+    margin-left:5px;
+    color: #0b0c0c;
+    font-weight: 700;
+
+  }
+  .accept{
+    color: #000000;
+    font-weight: 700;
+  }
+  
+  .box {
+    background-color: #D9D9D9;
+    margin: 2px;
+    border-radius: 8px;
+    padding:0 10px;
+  }
+  .header {
+    font-size: 24px;
+    background-color: #2A4966;
+    color: white;
+    padding:0 30px;
+  }
+  .item0{
+    padding-left: 3rem;
+    font-weight: bold;
+    }
+.item1{
+  padding-left: 2rem;
+  }
+.item2{
+padding-left: 6rem;
+font-weight: bold;
+}
+.item3{
+padding-left: 4rem;
+}
+.KicukiroNyabugogo{
+  background-color:#D9D9D9;
+  /* border: 2px solid black; */
+  /* padding: 3rem; */
+  height:5px;
+}
+    .loc{
+      font-size: 30px;
+      color: black;
+      font-weight: 600;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+
+
+
+
+    

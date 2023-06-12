@@ -1,0 +1,39 @@
+import React from 'react';
+import "./login.css"
+const Login = () => {
+    return (
+        <>
+            <div className="container">
+                <div className="forms-container">
+                    <div className="form-control signin-form">
+                        <form action="#">
+                            <h2>Login</h2>
+                            <input type="email" placeholder="Email" required />
+                            <input type="password" placeholder="Password" required />
+                            <button>Login</button>
+                        </form>
+                        <span>or signin with</span>
+                        <div className="socials">
+                            <i className="fab fa-facebook-f"></i>
+                            <i className="fab fa-google-plus-g"></i>
+                            <i className="fab fa-linkedin-in"></i>
+                        </div>
+                    </div>
+                </div>
+                <div className="intros-container">
+                    <div className="intro-control signin-intro">
+                        <div className="intro-control__inner">
+                            <h2>Welcome Back!</h2>
+                            <p>
+                                We are so excited to have you here. If you haven't already, create an account to get access to exclusive offers, rewards, and discounts.
+                            </p>
+                            <button id="signin-btn">Don't have an account? Sign Up.</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </>
+    )
+
+};
+export default Login;

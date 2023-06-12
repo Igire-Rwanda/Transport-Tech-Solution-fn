@@ -1,0 +1,1272 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+h1, h2, h3 {
+  font-style: italic;
+  font-weight: bolder;
+}
+p{
+    /* font-style: italic; */
+    font-weight: bold;  
+}
+body {
+  font-family: "Poppins", sans-serif;
+  height:100%;
+}
+ .whole1{
+    height: 100%;
+ } 
+.container1{
+    display: grid;
+    
+}
+.container1 img {
+    object-fit: cover; 
+    background-color: aqua;
+    width: 100%;
+    height: 85vh;
+    position: relative;
+   }
+.overlay{
+    content: "";
+    position: absolute;
+    background-color: rgba(14, 34, 51, 0.373);
+    width: 100%;
+    height: 95.1vh;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+.whole2 {
+    /* font-family: 'Poppins', sans-serif; */
+    width: 380px;
+    position: absolute;
+   margin-left: 32%;
+   margin-top: 9%;
+   
+}
+.whole2 h1{
+color: white;
+font-size: 58px;
+font-family:bold italic;
+text-align: center;
+}
+.whole2 button{
+    margin-top: 8%;
+    margin-left: 35%;
+    padding: 3% 10%;
+    cursor: pointer;
+    border-radius: 16px;
+    border-style: none;
+    background-color: #009AC7;
+}
+.container2{
+/* display: grid; */
+border-radius: 8px;
+background-color: #d1e5fa;
+border-color: #009AC7;
+width: 50%;
+height: 30%;
+ padding: 1.5%;
+ margin-left: 25%;
+ position: absolute;
+ margin-top: -5%;
+
+}
+.cont2{
+    margin-left: 5%;
+}
+.container2 h2{
+    color: #2A4966;
+    padding: 0% 5% 2% 5%;
+}
+.container2 p{
+    padding-bottom: 1.5%;
+    padding-bottom:3%;
+    color: rgba(0, 0, 0, 0.452);
+}
+span{
+    margin-right: 6%;
+}
+input{
+    margin-top: 2.6%;
+    padding: 2% 5%;
+    border-radius: 3px;
+    border :1px solid #009AC7;
+   outline-style: none;
+}
+select{
+    outline: none;
+    border: 1px solid #009AC7;
+    padding: 4% 6%;
+    margin-top: 18%;
+    margin-left: -28%;
+    border-radius: 4px;
+    cursor: pointer;
+  
+}
+select option{
+    color: rgb(88, 88, 88);
+    cursor: pointer;
+}
+
+.input2 label{
+    position: absolute;
+    margin-left: -4%;
+    margin-bottom: 1%;
+}
+.input1 label{
+    margin-left: 2%;
+}
+.input{
+    display: grid;
+    grid-template-columns: 0.4fr 0.2fr 0.2fr;
+}
+.input label{
+    color: #244059;
+    padding-bottom: 2%;
+}
+.input button{
+    background-color: #009AC7;
+    color: white;
+    border-style: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.whole3{
+    display: flex;
+    margin-top: 16%;
+    margin-left: 10%;
+    animation: slide-in 40s ease-in-out;
+}
+/* @keyframes slide-up {
+    0% {
+      opacity: 0;
+      transform: translateY(100%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  } */
+.one{
+    background-color: #009AC7;
+    color: white;
+    width: 13%;
+   padding: 0.31%;
+   margin-right: 1%;
+   position: relative;
+}
+
+
+.two{
+    color: #2A4966;
+    border: #009AC7;
+    background-color: white;
+}
+.schedule{
+    margin-top: 4%;
+    margin-left: 13%;
+}
+.schedule h1{
+    color: #2A4966;
+margin-left: 2%;
+}
+.schedule .p{
+margin: 1% 0%;
+color: rgb(94, 93, 93);
+}
+.schedule .p1{
+margin-left: 2%;
+color: rgb(94, 93, 93);
+}
+.schedule .p2{
+margin-bottom: 1%;
+
+}
+.map{
+    margin-top: 4%;
+}
+.line1{
+    margin-left: -90px;
+      margin-bottom: 3%; 
+    width: 100%;
+    height: 2px;
+    background-color: #B9B7B7;
+}
+.line2{
+    margin-left: -90px;
+      margin-bottom: 3%; 
+    width: 100%;
+    height: 2px;
+    background-color: #B9B7B7;
+}
+.rectangle{
+    margin-left: -60px;
+    border-top:2px solid #B9B7B7;
+    border-bottom:2px solid #B9B7B7;
+    border-left:2px solid #B9B7B7;
+    border-right:2px solid #B9B7B7;
+    width: 96%;
+    height: 96%;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: -2%;
+    margin-bottom: 1%;
+}
+.rect{
+    margin:6% 2% 6% -10%;
+    
+}
+.rect h4{
+    font-size: 20px;
+    margin-bottom: 3%;
+    color: rgb(37, 37, 37);
+}
+.rect p{
+    margin-bottom: 5%;
+    color: rgb(82, 82, 82);
+}
+.rect button{
+    padding: 1%;
+    border: none;
+   background-color: white;
+   color: rgb(112, 112, 112);
+}
+.rect button:hover{
+    cursor: pointer;
+    border: 1px solid rgb(158, 156, 156);
+    border-radius: 5px;
+}
+
+.paragraph{
+    margin-left: 10%;
+    padding-bottom: 5%;
+}
+
+.parg1 h2{
+color: #244059;
+margin : 2%;
+}
+.parg1 p{
+    font-size: 15px;
+   width: 90%;
+   color: rgb(94, 93, 93);
+}
+ .parg2 h2{
+    color: #244059;
+    margin : 2%;
+  
+}
+.parg2 p{
+    font-size: 15px;
+   width: 90%;
+   color: rgb(94, 93, 93);
+}
+.parg3 h2{
+    color: #244059;
+    margin : 2%;
+    
+}
+.parg3 p{
+    font-size: 15px;
+   width: 90%;
+   color: rgb(94, 93, 93);
+  
+}
+.drag{
+background-color: #d1e5fa;
+}
+.drag p{
+    padding-top: 2%;
+    padding-left: 4%;
+    color: rgb(182, 180, 180);
+}
+.drag h1{
+    padding:  1% 2% 2% 2%;
+    color: #244059;
+    font-size: 56px;
+    font-weight: thick;
+}
+.item{
+    min-height: 40%;
+    min-width: 33%;
+    padding: 16px;
+}
+.item img{
+    width: 100%;
+    height: 80%;
+    border-radius: 10px;
+    pointer-events: none;
+}
+.inner-carousel{
+   display:flex;  
+}
+.carousel{
+    cursor:grab;
+    overflow: hidden;
+    
+}
+
+
+  @media screen  and (max-width:360px) {
+   
+    .container1 img{
+        width:82.2rem;
+    }
+    .overlay{
+        width:82.2rem;
+    }
+    .whole2{
+        margin-top: 17%;
+        margin-left: 100%;
+    }
+    .whole2 h1{
+font-size: 5rem;
+width:30rem;
+/* margin-left: -30px; */
+    }
+    .whole2 button{
+margin-left: 7rem;
+padding:  1rem 3rem;
+font-size: 2rem;
+border-radius: 10rem;
+    }
+    .container2{
+        margin-top: -26%;
+        width: 56rem;
+        height:52%;
+        margin-left: 60%;
+    }
+    .cont2{
+margin-top: 3%;
+    }
+    .container2 h2{
+font-size: 2.8rem;
+    }
+    .container2 p{
+        font-size: 2.3rem;
+            }
+input{
+    width: 15rem;
+    font-size: 1.7rem;
+}
+.input1 label{
+  font-size: 1.7rem;  
+}
+select{
+    margin-left: 15%;
+    width:11rem;
+    height: 3rem;
+    font-size: 1.8rem;
+}
+.input2{
+    margin-top: 0.3rem;
+    margin-left: 2rem;
+}
+.input2 label{
+    font-size: 1.7rem; 
+    margin-left: 6%;
+}
+.input button{
+    margin-top: 1rem;
+    margin-left: 2.1rem;
+    width: 20.3rem;
+    height: 4rem;
+    /* padding: 3% 2%; */
+    font-size: 33px;
+}
+.whole3{
+    margin-top: 80%;
+    width:80rem;
+    /* font-size: 6rem; */
+}
+.one{
+   font-size: 2rem; 
+   width:26%;
+}
+.two{
+    font-size: 2rem;
+}
+.schedule{
+    margin-top: 18%;
+ margin-left: 20%;
+}
+.schedule h1{
+    font-size: 2.6rem;
+    width:20rem;
+    margin-bottom: 13%;
+}
+.schedule .p{
+    font-size: 2rem;
+    width: 1100px;
+    margin-left: -1rem;
+    margin-bottom: 10%;
+}
+.schedule .p1{
+    font-size: 2rem;
+    width: 40rem;
+    margin-bottom: 30%;
+}
+
+.line1{
+    width:66rem;
+    height: 5px;
+    margin-left: 0.2rem;
+}
+.rectangle{
+    margin-left: 2rem;
+    border-top:5px solid #B9B7B7;
+    border-bottom:5px solid #B9B7B7;
+    border-left:5px solid #B9B7B7;
+    border-right:5px solid #B9B7B7;
+    width: 60rem;
+    height: 96%;
+    border-radius: 1.4rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 6%;
+    margin-bottom: 6%;
+}
+.map1{
+    width: 26rem;
+}
+.line2{
+    width:66rem;
+    height: 5px;
+    margin-left: 0.2rem;
+}
+.rect{
+    margin-left: .5rem;
+}
+.rect h4{
+    font-size: 2rem;
+}
+.rect p{
+    font-size:1.6rem;
+    width: 30rem;
+}
+.rect button{
+    font-size:1.6rem; 
+}
+.parg1 h2{
+    width:70rem;
+    font-size: 3rem;
+ margin-top: 4rem;
+}
+.parg1 p{
+    width:76rem;
+    font-size: 2.2rem;
+ margin-top: 2rem;
+}
+.parg2 h2{
+    width:70rem;
+    font-size: 3rem;
+ margin-top: 3rem;
+}
+.parg2 p{
+    width:76rem;
+    font-size: 2.2rem;
+ margin-top: 2rem;
+}
+.parg3 h2{
+    width:70rem;
+    font-size: 3rem;
+ margin-top: 3rem;
+}
+.parg3 p{
+    width:76rem;
+    font-size: 2.2rem;
+ margin-top: 2rem;
+ margin-bottom: 3rem;
+}
+.drag{
+    width: 82rem;
+}
+.drag h1{
+    font-size: 4rem;
+}
+.drag p{
+    font-size: 2rem;
+}
+  }
+
+@media screen and (min-width:361px) and (max-width:412px){
+    body{
+        height:127rem;
+    }
+    .container1 img{
+        width: 33.4rem;
+        height: 80%;
+    }
+    .overlay{
+        width:33.4rem;
+        height: 30%;
+    }
+    .whole2{
+        margin-top: 20px;
+        margin-left: 50px;
+        
+    }
+    .whole2 h1{
+        font-size: 34px;
+        width: 260px;
+        margin-left: 20%;
+    }
+    .whole2 button{
+        font-size: 14px;
+       
+    }
+    .container2{
+        margin-top: -8rem;
+        width: 24rem;
+        height:10.2rem;
+        margin-left: 60px;
+    }
+    .cont2{
+margin-top: 1.3rem;
+    }
+    .container2 h2{
+font-size: 16px;
+    }
+    .container2 p{
+        font-size: 13px;
+            }
+input{
+    width: 8rem;
+}
+.input1 label{
+  font-size: 13px;  
+}
+select{
+    width:5rem;
+}
+.input2{
+    margin-top: 0.3rem;
+    margin-left: 2rem;
+}
+.input2 label{
+    font-size: 13px; 
+}
+.input button{
+    margin-top: 1rem;
+    margin-left: -1.1rem;
+    width: 6.3rem;
+    height: 2rem;
+    font-size: 12px;
+}
+.one{
+  width:45%;
+}
+.schedule{
+margin-top: 2rem;
+}
+.schedule h1{
+    font-size: 18px;
+}
+.schedule .p{
+    margin-left: -3rem;
+    width: 29.56rem;
+    font-size: 14px;
+}
+.schedule .p1{
+    
+    font-size: 14px;
+}
+.map1{
+    display: none;
+}
+.line1{
+    width:28rem;
+    margin-left: -1.6rem;
+}
+.rectangle{
+    margin-left: 0.31rem;
+    border-top:2px solid #B9B7B7;
+    border-bottom:2px solid #B9B7B7;
+    border-left:2px solid #B9B7B7;
+    border-right:2px solid #B9B7B7;
+    width: 96%;
+    height: 96%;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 2%;
+    margin-bottom: 2.7%;
+}
+.map1{
+    display: none;
+}
+.line2{
+    width:28rem;
+    margin-left:-1.6rem;
+}
+.rect{
+    margin-left: -10rem;
+}
+.rect h4{
+    font-size: 16px;
+}
+.rect p{
+    font-size: 13px;
+}
+.parg1 h2{
+    width:30rem;
+    font-size: 18px;
+ margin-top: 2rem;
+}
+.parg1 p{
+    width:30rem;
+    font-size: 14px;
+ margin-top: 1rem;
+}
+.parg2 h2{
+    width:30rem;
+    font-size: 18px;
+ margin-top: 2rem;
+}
+.parg2 p{
+    width:30rem;
+    font-size: 14px;
+ margin-top: 1rem;
+}
+.parg3 h2{
+    width:30rem;
+    font-size: 18px;
+ margin-top: 2rem;
+}
+.parg3 p{
+    width:30rem;
+    font-size: 14px;
+ margin-top: 1rem;
+}
+.drag{
+    width: 33.5rem;
+}
+.drag h1{
+    font-size: 30px;
+}
+.drag p{
+    font-size: 12px;
+}
+}
+
+@media screen and (min-width:413px) and (max-width:480px){
+    body{
+        height:120rem;
+    }
+    .overlay{
+        height: 32.5%;
+        width:33.4rem;
+    }
+    .container1 img{
+        width: 33.4rem;
+        height: 80%;
+    }
+    
+    .whole2{
+        margin-top: 20px;
+        margin-left: 50px;
+        
+    }
+    .whole2 h1{
+        font-size: 34px;
+        width: 260px;
+        margin-left: 20%;
+    }
+    .whole2 button{
+        font-size: 18px;
+       
+    }
+    .container2{
+        margin-top: -8rem;
+        width: 24rem;
+        height:10.2rem;
+        margin-left: 60px;
+    }
+    .cont2{
+margin-top: 1.3rem;
+    }
+    .container2 h2{
+font-size: 16px;
+    }
+    .container2 p{
+        font-size: 13px;
+            }
+input{
+    width: 8rem;
+}
+.input1 label{
+  font-size: 13px;  
+}
+select{
+    width:5rem;
+}
+.input2{
+    margin-top: 0.3rem;
+    margin-left: 2rem;
+}
+.input2 label{
+    font-size: 13px; 
+}
+.input button{
+    margin-top: 1rem;
+    margin-left: -1.1rem;
+    width: 6.3rem;
+    height: 2rem;
+    font-size: 12px;
+}
+.one{
+  width:45%;
+}
+.schedule{
+margin-top: 2rem;
+}
+.schedule h1{
+    font-size: 18px;
+}
+.schedule .p{
+    margin-left: -3rem;
+    width: 29.56rem;
+    font-size: 14px;
+}
+.schedule .p1{
+    
+    font-size: 14px;
+}
+.map1{
+    display: none;
+}
+.line1{
+    width:28rem;
+    margin-left: -1.6rem;
+}
+.rectangle{
+    margin-left: 0.31rem;
+    border-top:2px solid #B9B7B7;
+    border-bottom:2px solid #B9B7B7;
+    border-left:2px solid #B9B7B7;
+    border-right:2px solid #B9B7B7;
+    width: 96%;
+    height: 96%;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 2%;
+    margin-bottom: 2.7%;
+}
+.map1{
+    display: none;
+}
+.line2{
+    width:28rem;
+    margin-left:-1.6rem;
+}
+.rect{
+    margin-left: -10rem;
+}
+.rect h4{
+    font-size: 16px;
+}
+.rect p{
+    font-size: 13px;
+}
+.parg1 h2{
+    width:30rem;
+    font-size: 18px;
+ margin-top: 2rem;
+}
+.parg1 p{
+    width:30rem;
+    font-size: 14px;
+ margin-top: 1rem;
+}
+.parg2 h2{
+    width:30rem;
+    font-size: 18px;
+ margin-top: 2rem;
+}
+.parg2 p{
+    width:30rem;
+    font-size: 14px;
+ margin-top: 1rem;
+}
+.parg3 h2{
+    width:30rem;
+    font-size: 18px;
+ margin-top: 2rem;
+}
+.parg3 p{
+    width:30rem;
+    font-size: 14px;
+ margin-top: 1rem;
+}
+.drag{
+    width: 33.5rem;
+}
+.drag h1{
+    font-size: 30px;
+}
+.drag p{
+    font-size: 12px;
+}
+}
+@media screen and (min-width:481px) and (max-width:500px){
+    body{
+        height:248vh;
+      } 
+      .container1 img{
+height: 90%;
+width: 33.6rem;
+      } 
+      .overlay{
+    height: 72%;    
+    width: 33.6rem;      
+}
+      .whole2{
+        margin-top: 12%;
+        margin-left: 20%;
+      }  
+.whole2 h1{
+    font-size: 2.6rem;
+    width: 20rem;
+}
+.whole2 button{
+    margin-top: 6%;
+    margin-left: 28%;
+}
+.container2{
+    width: 70%;
+    height:35%;
+    margin-top: -17%;
+    margin-left: 15%;
+}
+.input2 label{
+    margin-left: 4%;
+}
+input{
+    width: 10rem;
+}
+select{
+    margin-left: 10%;  
+}
+.input button{
+    margin-top: 4rem;
+    margin-left: -11rem;
+    width: 10rem;
+    height: 1.5rem;
+}
+.whole3{
+    margin-top: 25%;
+}
+.one {
+width: 36%;
+margin-left: -4%;
+}
+.schedule .p{
+    margin-left: -9%;
+    width: 32rem;
+}
+.rect h4{
+margin-left: -60%;    
+}
+.rect p{
+    margin-left: -70%;    
+    }
+    .rect button{
+        margin-left: -50%;    
+        }    
+.map1{
+    display: none;
+}
+.parg1 p{
+    margin-left: -6%;
+    width: 30rem;
+}
+.parg1 h2{
+    margin-left: -1%;
+}
+.parg2 p{
+    margin-left: -6%;
+    width: 30rem;
+}
+.parg2 h2{
+    margin-left: -1%;
+}
+.parg3 p{
+    margin-left: -6%;
+    width: 30rem;
+}
+.parg3 h2{
+    margin-left: -1%;
+}
+}
+
+@media screen and (min-width:501px) and (max-width:540px){
+    body{
+        height:248vh;
+      } 
+      .container1 img{
+height: 90%;
+      } 
+      .overlay{
+    height: 43.5%;    
+      }
+      .whole2{
+        margin-top: 12%;
+        margin-left: 20%;
+      }  
+.whole2 h1{
+    font-size: 2.6rem;
+    width: 20rem;
+}
+.whole2 button{
+    margin-top: 6%;
+    margin-left: 28%;
+}
+.container2{
+    width: 70%;
+    height:27%;
+    margin-top: -17%;
+    margin-left: 15%;
+}
+.input2 label{
+    margin-left: 4%;
+}
+input{
+    width: 10rem;
+}
+select{
+    margin-left: 10%;  
+}
+.input button{
+    margin-top: 4rem;
+    margin-left: -11rem;
+    width: 10rem;
+    height: 1.5rem;
+}
+.whole3{
+    margin-top: 25%;
+}
+.one {
+width: 33%;
+margin-left: -4%;
+}
+.schedule .p{
+    margin-left: -9%;
+    width: 32rem;
+}
+.rect h4{
+margin-left: -60%;    
+}
+.rect p{
+    margin-left: -70%;    
+    }
+    .rect button{
+        margin-left: -50%;    
+        }    
+.map1{
+    display: none;
+}
+.parg1 p{
+    margin-left: -6%;
+    width: 30rem;
+}
+.parg1 h2{
+    margin-left: -1%;
+}
+.parg2 p{
+    margin-left: -6%;
+    width: 30rem;
+}
+.parg2 h2{
+    margin-left: -1%;
+}
+.parg3 p{
+    margin-left: -6%;
+    width: 30rem;
+}
+.parg3 h2{
+    margin-left: -1%;
+}
+}
+
+@media screen and (min-width:541px) and (max-width:782px){
+.container2{
+    height: 10rem;
+    width: 70%;
+    margin-left: 20%;
+}
+.whole2{
+    margin-left: 15%;
+}
+.overlay{
+    height: 33.4rem;
+}
+.input1 label{
+    margin-left: 6%;
+    font-size: 14px;
+}
+.input2 label{
+    font-size: 14px; 
+    margin-left: 4%; 
+}
+input{
+    width: 7rem;
+}
+select{
+    width:5rem;
+    margin-left: 10%;
+    margin-top: 23%;
+}
+.input button{
+    width: 170%;
+    margin-left: 36%;
+}
+.whole3{
+    margin-top: 26%;
+}
+.one{
+    width: 30%;
+}
+}
+
+@media screen and (min-width:783px) and (max-width:800px){
+  body{
+    height:248vh;
+  } 
+  .whole2{
+    margin-top: 45%;
+    margin-left: 26%;
+  } 
+  .container2{
+    margin-left: 17%;
+    width: 65%;
+    height: 16%;
+  }
+  select{
+    margin-left: 26%;
+  }
+  .input2 label{
+    margin-left: 7%;
+  }
+  .input button{
+    margin-left: 50%;
+    margin-top: 6%;
+    width: 7rem;
+    height: 86%;
+  }
+  .whole3{
+    margin-top: 26%;
+
+  }
+ .one{
+    width: 10rem;
+ } 
+.parg1 p{
+    width:43rem;
+    margin-left: -33px;
+}
+.parg2 p{
+    width:43rem;
+    margin-left: -33px;
+}
+.parg3 p{
+    width:43rem;
+    margin-left: -33px;
+}
+.drag h1{
+font-size: 46px;
+}
+.drag{
+    width: 48.9rem;
+}
+}
+@media screen and (min-width:801px) and (max-width:820px){
+    body{
+      height:248vh;
+    } 
+    .whole2{
+      margin-top: 15%;
+      margin-left: 26%;
+    } 
+    .container2{
+      margin-left: 17%;
+      width: 65%;
+      height: 36%;
+    }
+    select{
+      margin-left: 26%;
+    }
+    .input2 label{
+      margin-left: 7%;
+    }
+    .input button{
+      margin-left: 50%;
+      margin-top: 6%;
+      width: 7rem;
+      height: 86%;
+    }
+    .whole3{
+      margin-top: 26%;
+  
+    }
+   .one{
+      width: 10rem;
+   } 
+  .parg1 p{
+      width:43rem;
+      margin-left: -33px;
+  }
+  .parg2 p{
+      width:43rem;
+      margin-left: -33px;
+  }
+  .parg3 p{
+      width:43rem;
+      margin-left: -33px;
+  }
+  .drag h1{
+  font-size: 46px;
+  }
+  .drag{
+      width: 48.9rem;
+  }
+  }
+
+@media screen and (min-width:821px) and (max-width:912px){
+    body{
+       height: 208vh ;
+    }
+    .container1 img{
+       height: 80%;
+    }
+    .overlay{
+        height: 99.4%;   
+    }
+.whole2{
+margin-top: 11%;
+margin-left: 30%;
+}
+.container2{
+    margin-top: -23%;
+    margin-left: 18%;
+    width: 65%;
+    height:36%;
+}
+.cont2{
+    margin-top: 4%;
+}
+.input label{
+    margin-left: 6%;
+}
+select{
+    margin-left: 35%;
+}
+.input button{
+    margin-left: 65%;
+    width: 8rem;
+}
+.whole3{
+    margin-top: 7%;
+}
+.one{
+    width: 20%;
+}
+.rect{
+    margin-top: 10%;
+}
+.rect h4{
+margin-bottom: 20px;
+}
+.parg1 p{
+    margin-left: -4%;
+    width: 100%;
+}
+.parg2 p{
+    margin-left: -4%;
+    width: 100%;
+}
+.parg3 p{
+    margin-left: -4%;
+    width: 100%;
+}
+}
+
+@media screen and (min-width:913px) and (max-width:963px){
+.whole2{
+    margin-top: 20rem;
+}
+    .container2{
+  height: 11rem;  
+}
+input{
+    width: 8rem;
+}
+
+.input label{
+    margin-left: 8%;
+    margin-top: 3%;
+}
+select{
+    margin-top: 35%;
+    margin-left: 12%;   
+}
+}
+
+@media screen and (min-width:964px) and (max-width:1024px){
+    .container1 img{
+        height:70%;
+    }
+    .overlay{
+        height:77.4%;  
+    }
+.whole2{
+    margin-top: 9%;
+}
+.container2{
+    width: 60%;
+    margin-left: 20%;
+    margin-top: -28%;
+}
+select{
+    margin-left: 30%;
+}
+.input label{
+    margin-left: 7.6%;
+}
+.input button{
+    margin-left: 60%;
+    width: 7rem;
+}
+.whole3{
+    margin-top: -7%;
+}
+.one{
+    width: 10rem;
+}
+}
+
+@media screen and (min-width:1025px) and (max-width:1280px){
+.container1 img{
+height: 60%;
+}
+.overlay{
+ height: 62%;   
+}
+.container2{
+    margin-top: -33%;
+    width: 54%;
+    height:23%;
+}
+.whole3{
+    margin-top: -16%;
+}
+.one{
+    width: 10rem;
+}
+}

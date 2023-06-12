@@ -8,7 +8,7 @@ body{
 }
 .admin-container{
     background-color: #2A4966;
-    height: 100vh;
+    height: 100%;
     display: grid;
     grid-template-columns: 0.2fr 1fr;
 }
@@ -19,7 +19,8 @@ body{
 
 .admin-content{
     background-color: white;
-    
+    /* flex: 1; */
+  /* overflow-y: auto; */
 }
 .admin-content h4{
     padding: 20px 20px;
@@ -31,25 +32,24 @@ body{
     margin: auto;
 }
 .card-admin{
-    width: 80%;
-    
+    width: 80%;  
 }
 .blue-card{
-    /* display: flex; */
-    /* justify-content: center; */
     height: 22vh;
+    /* width: 25.3%; */
+    display: flex;
+    justify-content: center;
 }
 .blue-card:hover{
     transition: 0.5s ease;
 }
 .blue-card h1{
-    margin-left: 115px;
-    width: 120px;
+    margin: auto;
     font-size: 40px;
     color: #2A4966;
 }
 .blue-card p{
-    margin-left: 125px ;
+    text-align: center;
     margin-bottom: 20px;
     font-size: 20px;
     color: #2A4966;
@@ -57,17 +57,308 @@ body{
 }
 .blue-card button{
     height: 6vh;
-    position: absolute;
-    margin-top: 110px;
+    position: fixed;
+    margin-top: 106px;
     border-radius: 0 0 20px 20px;
     background-color: #2A4966;
     color: white;
     font-size: 18px;
     border: none;
-    width: 345px;
+    width: 25.3%;
     margin-left: -30px;
+    display: flex;
+    
+    justify-content: center;
 }
 .blue-card button:hover{
     background-color: #009AC7;
     cursor: pointer;
+}
+ .drivers {
+    padding: 20px 60px;
+ }
+ .drivers h1{
+    margin-bottom: 40px;
+ }
+ .cards{
+    display: flex;
+    justify-content:  space-around;
+    gap: 40px;
+}
+.card1{
+    display: flex;
+    justify-content: center;
+    background-color: #2A4966;
+    color: white;
+    padding: 20px 40px;
+    border-radius: 20px;
+}
+.card2{
+    display: flex;
+    justify-content: center;
+    background-color: #2A4966;
+    color: white;
+    padding: 20px 40px;
+    border-radius: 20px;
+}
+.box1{
+  padding: 20px 20px;
+  height: 2vh;
+  border-radius: 10px;
+  color: 'black';
+  background-color: 'purple'  
+}
+.box2{
+  color: 'white';
+  background-color: '#009AC7'  
+}
+.icon i{
+    font-size: 40px;
+  margin-top: 30px;
+}
+.first p{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 15px;
+}
+.drivers h4{
+   display: flex;
+   justify-content: center;
+   margin-top: 40px;
+}
+table{
+    width: 100%;
+    height: 55vh;
+  }
+  .container{
+    margin-left: 19rem;
+  }
+  .table{
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    border-radius: 15px;
+    opacity: 95%;
+    padding:30px 50px;
+  }
+  .table-body{
+    background-color: #E9F4FF;
+  }
+
+  /* .holder {
+    display: flex;
+    background-color:white;
+    width: 7vh;
+    border-radius: 10px;
+   position: relative;
+  }
+
+  .box1 {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px ;
+  }
+  .box2 {
+    background-color: green;
+    margin: 2px;
+    border-radius: 8px;
+    padding:0 10px;
+  }
+  .box {
+    background-color: #D9D9D9;
+    margin: 2px;
+    border-radius: 8px;
+    padding:0 10px;
+  } */
+  .holder {
+    display: flex;
+    background-color: #B9B7B7;
+    width: 9rem;
+    height: 4.5vh;
+    border-radius: 18px;
+    padding:7px 8px;
+    position: relative;
+  }
+  .box1 {
+    position: relative;
+    background-color: #009AC7;
+    border-radius: 15px;
+    padding:10px 10px;
+    height: 4.5vh;
+    margin-left: -8px;
+    top:0;
+    margin-top: -8px;
+    bottom: 0;
+    left: 0;
+  }
+  .box2 {
+    position: absolute;
+    background-color: #009AC7;
+    margin-left:60px;
+    border-radius: 15px;
+    padding:7px 14px;
+    top:0;
+    bottom: 0;
+    right:0;
+  }
+  .block{
+    margin-top: -120px;
+    color: #0B0C0C;
+    font-weight: 700;
+  }
+  .unblock{
+    color: #000000;
+    font-weight: 700;
+  }
+  .header {
+    font-size: 24px;
+    background-color: #2A4966;
+    color: white;
+    padding:0 30px;
+  }
+.item1{
+  text-align: center;
+  }
+.item2{
+  text-align: center;
+font-weight: bold;
+}
+.item3{
+ display: flex;
+ justify-content: center;
+ padding: 20px 0;
+}
+.KicukiroNyabugogo{
+  background-color:#D9D9D9;
+  border: 2px solid black;
+  padding: 6rem;
+  height:5px;
+}
+    .loc{
+      font-size: 30px;
+      color: black;
+      font-weight: 600;
+    margin-left: 5rem;
+    }
+.container-driver{
+margin-bottom: 40px;
+}
+.container-bus{
+    padding: 40px 80px;
+}
+.upbar{
+  display: flex;
+  gap: 20px;
+  padding: 10px 20px;
+  
+}
+.upicons {
+  margin-top: 20px;
+   
+}
+.vertical{
+  content: "";
+  border: 1px solid black;
+  height: 3vh;
+  margin-top: 20px;
+}
+.credential p{
+  font-size: 12px;
+}
+.formcontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 40px;
+  padding: 40px 40px;
+  border: 1px solid black;
+  height: 70vh;
+}
+.head{
+  text-align: center;
+}
+.form-container {
+  max-width: 400px;
+  margin: auto;
+  margin-top: 40px;
+  padding: 20px;
+  border: 1px solid black;
+    background-color: #E9F4FF;
+  
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.part-one h4 {
+   margin-top: 20px;
+}
+
+.form-section {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input[type="text"],
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.confirm-checkbox {
+  display: block;
+  margin-top: 10px;
+}
+
+button {
+  display: block;
+  width: 40%;
+  padding: 12px;
+  background-color: #2A4966;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.success-message,
+.error-message {
+  text-align: center;
+  margin-top: 10px;
+}
+[data-theme="dark"] {
+  /* dark theme styles */
+  color: purple;
+  background-color:black;
+}
+
+[data-theme="light"] {
+  /* light theme styles */
+  color: black;
+  background-color: #F0F0F0;
+}
+.upper-part{
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 400px){
+  .cards{
+    flex-direction: column;
+  }
 }

@@ -2,16 +2,18 @@ import '../navigation/NavigationBar.css'
 import { FiMenu } from 'react-icons/fi';
 import { FaTimes } from 'react-icons/fa';
 import { useState } from 'react';
-import Logo from '../image/Logo.png'
+// import Logo from '../image/Logo.png'
+
 
 let NavBar = () =>{
 
     let [visible, SetVisible] = useState(true);
     return(
+    
         <div className='container'>
           <nav>
             <a href='#' id='logo'>
-                 <img src={Logo}></img>
+                 {/* <img src={Logo}></img> */}
             </a>
             <div>
                 <ul id='navbar'>

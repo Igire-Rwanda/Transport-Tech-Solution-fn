@@ -4,6 +4,7 @@ const Trial =()=>{
     return(
         <>
         <h1>Trying routing</h1>
+        
         </>
     )
 }

@@ -21,15 +21,15 @@
     button: "Bookings",
 },
 {
-    icon: <i class='bx bx-money'></i>,
+    icon: <i class='bx bx-send'></i>,
     number : 40 ,
     button: "Routes",
 },
 {
     icon: <i class='bx bxs-calendar'></i>,
-    number : 'Wednesday/31/05' ,
+    number : '05' ,
     button: "Dates",
 },
 
-
 ]
+
