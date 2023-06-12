@@ -357,8 +357,8 @@ button:disabled {
   display: flex;
   justify-content: space-between;
 }
-@media screen and (max-width: 400px){
+/* @media screen and (max-width: 400px){
   .cards{
     flex-direction: column;
   }
-}
+} */

@@ -10,6 +10,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "create": "^0.0.2",
+    "create-vite": "^4.3.2",
     "framer-motion": "^10.12.16",
     "leaflet": "^1.9.4",
     "react": "^18.2.0",

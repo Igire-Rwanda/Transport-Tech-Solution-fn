@@ -10,6 +10,8 @@ import Home from '../../pages/home/home.jsx';
 import Trial from '../trial.jsx'
 import Booking from "../../pages/Booking/booking";
 import Destination from "../../pages/Destination/destination";
+import Signup from "../../pages/signup";
+import Login from "../../pages/login";
 
 
 const Index = () =>{
@@ -17,6 +19,11 @@ const Index = () =>{
         <Routes>
             <Route path="/trial" element ={<Trial/>}/>
             <Route path="/admin" element={<Admindash/>}/>
+            <Route path="/booking" element={<Booking/>}/>
+            <Route path="/destination" element={<Destination/>}/>
+            <Route path='/' element={<Home/>}/>
+            <Route path="/Signup" element={<Signup />}/>
+            <Route path="/login" element={<Login />}/>
             <Route path="/driver" element={<Admindash2/>}/>
             <Route path="/bus" element={<Admindash3/>}/>
             <Route path="/claim" element={<Admindash4/>}/>

@@ -4,7 +4,7 @@ import NavBar  from "../../pages/navigation/NavigationBar.jsx";
 import { FaSearch } from 'react-icons/fa';
 import {AiOutlineSwapRight} from 'react-icons/ai'
 import {AiOutlineRight} from 'react-icons/ai'
-// import {motion} from 'framer-motion'
+import {motion} from 'framer-motion'
 import { useRef,useEffect,useState } from 'react'
 import images from './images'
 import Image from '../image/ElecMobility.jpg'
@@ -19,8 +19,8 @@ const Home =()=>{
     return(
         <div className="whole1">
             <NavBar/>
-        <div className="container1">
-<img src={Image}/>
+        <div className="homecontainer1">
+<img className="homeImage" src={Image}/>
 <div className="overlay"></div>
 <div className="whole2"> 
 <h1>Your next stop awaits</h1> 

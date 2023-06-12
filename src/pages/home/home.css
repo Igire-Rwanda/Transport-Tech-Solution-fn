@@ -11,18 +11,18 @@ p{
     /* font-style: italic; */
     font-weight: bold;  
 }
-body {
+/* body {
   font-family: "Poppins", sans-serif;
   height:100%;
-}
+} */
  .whole1{
     height: 100%;
  } 
-.container1{
+.homecontainer1{
     display: grid;
     
 }
-.container1 img {
+.homeImage {
     object-fit: cover; 
     background-color: aqua;
     width: 100%;
@@ -91,7 +91,7 @@ height: 30%;
 span{
     margin-right: 6%;
 }
-input{
+.input1 input{
     margin-top: 2.6%;
     padding: 2% 5%;
     border-radius: 3px;
@@ -313,9 +313,9 @@ background-color: #d1e5fa;
 }
 
 
-  @media screen  and (max-width:360px) {
+  /* @media screen  and (max-width:360px) {
    
-    .container1 img{
+    .homeImage{
         width:82.2rem;
     }
     .overlay{
@@ -328,7 +328,7 @@ background-color: #d1e5fa;
     .whole2 h1{
 font-size: 5rem;
 width:30rem;
-/* margin-left: -30px; */
+ 
     }
     .whole2 button{
 margin-left: 7rem;
@@ -351,7 +351,7 @@ font-size: 2.8rem;
     .container2 p{
         font-size: 2.3rem;
             }
-input{
+.input1 input{
     width: 15rem;
     font-size: 1.7rem;
 }
@@ -377,13 +377,13 @@ select{
     margin-left: 2.1rem;
     width: 20.3rem;
     height: 4rem;
-    /* padding: 3% 2%; */
+     
     font-size: 33px;
 }
 .whole3{
     margin-top: 80%;
     width:80rem;
-    /* font-size: 6rem; */
+   
 }
 .one{
    font-size: 2rem; 
@@ -499,7 +499,7 @@ select{
     body{
         height:127rem;
     }
-    .container1 img{
+    .homeImage{
         width: 33.4rem;
         height: 80%;
     }
@@ -536,7 +536,7 @@ font-size: 16px;
     .container2 p{
         font-size: 13px;
             }
-input{
+.input1 input{
     width: 8rem;
 }
 .input1 label{
@@ -663,7 +663,7 @@ margin-top: 2rem;
         height: 32.5%;
         width:33.4rem;
     }
-    .container1 img{
+    .homeImage{
         width: 33.4rem;
         height: 80%;
     }
@@ -697,7 +697,7 @@ font-size: 16px;
     .container2 p{
         font-size: 13px;
             }
-input{
+.input1 input{
     width: 8rem;
 }
 .input1 label{
@@ -819,7 +819,7 @@ margin-top: 2rem;
     body{
         height:248vh;
       } 
-      .container1 img{
+      .homeImage{
 height: 90%;
 width: 33.6rem;
       } 
@@ -848,7 +848,7 @@ width: 33.6rem;
 .input2 label{
     margin-left: 4%;
 }
-input{
+.input1 input{
     width: 10rem;
 }
 select{
@@ -910,7 +910,7 @@ margin-left: -60%;
     body{
         height:248vh;
       } 
-      .container1 img{
+      .homeImage{
 height: 90%;
       } 
       .overlay{
@@ -937,7 +937,7 @@ height: 90%;
 .input2 label{
     margin-left: 4%;
 }
-input{
+.input1 input{
     width: 10rem;
 }
 select{
@@ -1015,7 +1015,7 @@ margin-left: -60%;
     font-size: 14px; 
     margin-left: 4%; 
 }
-input{
+.input1 input{
     width: 7rem;
 }
 select{
@@ -1142,7 +1142,7 @@ font-size: 46px;
     body{
        height: 208vh ;
     }
-    .container1 img{
+    .homeImage{
        height: 80%;
     }
     .overlay{
@@ -1204,7 +1204,7 @@ margin-bottom: 20px;
     .container2{
   height: 11rem;  
 }
-input{
+.input1 input{
     width: 8rem;
 }
 
@@ -1219,7 +1219,7 @@ select{
 }
 
 @media screen and (min-width:964px) and (max-width:1024px){
-    .container1 img{
+    .homeImage{
         height:70%;
     }
     .overlay{
@@ -1252,7 +1252,7 @@ select{
 }
 
 @media screen and (min-width:1025px) and (max-width:1280px){
-.container1 img{
+.homeImage{
 height: 60%;
 }
 .overlay{
@@ -1269,4 +1269,4 @@ height: 60%;
 .one{
     width: 10rem;
 }
-}
+} */
