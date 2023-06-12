@@ -27,7 +27,7 @@ body {
 }
 .container .forms-container {
   position: relative;
-  width: 100%;
+  width: 50%;
   text-align: center;
   float: right;
 }

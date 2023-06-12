@@ -11,7 +11,6 @@ import Trial from '../trial.jsx'
 import Booking from "../../pages/Booking/booking";
 import Destination from "../../pages/Destination/destination";
 import Signup from "../../pages/signup";
-import Login from "../../pages/login";
 
 
 const Index = () =>{
