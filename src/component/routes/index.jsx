@@ -8,6 +8,9 @@ import Admindash5 from '../../pages/Admindashboard/admindash5'
 import Home from '../../pages/home/home.jsx';
 // import Admindash from '../../pages/Admindashboard/admindash'
 import Trial from '../trial.jsx'
+
+import Tracking from "../../pages/Tracking/tracking";
+
 import Booking from "../../pages/Booking/booking";
 import Destination from "../../pages/Destination/destination";
 import Signup from "../../pages/signup";
@@ -19,6 +22,9 @@ const Index = () =>{
         <Routes>
             <Route path="/trial" element ={<Trial/>}/>
             <Route path="/admin" element={<Admindash/>}/>
+
+            <Route path="/tracking" element={<Tracking/>}/>
+
             <Route path="/booking" element={<Booking/>}/>
             <Route path="/destination" element={<Destination/>}/>
             <Route path='/' element={<Home/>}/>
@@ -28,6 +34,7 @@ const Index = () =>{
             <Route path="/bus" element={<Admindash3/>}/>
             <Route path="/claim" element={<Admindash4/>}/>
             <Route path="/form" element={<Admindash5/>}/>
+
         </Routes>
     )
 }
