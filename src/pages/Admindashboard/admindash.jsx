@@ -8,12 +8,26 @@ const Admin = ()=>{
     <div className="admin-container">
         <Sidebar/>
         <div className="admin-content">
+        <div className="upper-part">
+            <div className="part-one">
           <h4>WELCOME <span style={{color:"#009AC7"}}>
             Admin.</span></h4>
-
-          <div className="line2"></div>
-          
-          <div className="card-admin">
+            </div>
+            <div className="upbar">
+              <div className="upicons"> 
+            <i class='bx bx-search'></i>
+            <i class='bx bx-bell'></i>
+            </div>
+            <div className="vertical"></div>
+            <div className="credential">
+            <img src=""/>
+              <h5>Tristan</h5>
+              <p>tristanboo9@gmail.com</p>
+            </div>
+            </div>
+            </div>
+          <div className="line2"></div>  
+     <div className="card-admin">
             {Card.map((data) => (
                <div className="blue-card">
                 <h1>{data.icon}</h1>
@@ -22,8 +36,9 @@ const Admin = ()=>{
                </div>
             ))}
           </div>
+      </div>
+      
         </div>
-    </div>
     </>
   )
 }
