@@ -1,7 +1,8 @@
-import '../navigation/NavigationBar.css'
+import './NavigationBar.css';
 import { FiMenu } from 'react-icons/fi';
 import { FaTimes } from 'react-icons/fa';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 // import Logo from '../image/Logo.png'
 
 
@@ -17,11 +18,11 @@ let NavBar = () =>{
             </a>
             <div>
                 <ul id='navbar'>
-                 <li><a className='active' href='#'>Home</a></li>
-                 <li><a href='#'>Book here</a></li>
-                 <li><a href='#'>Manage Booking</a></li>
-                 <li><a href='#'>Contact</a></li>
-                 <li><a href='#'>Sign in</a></li>   
+                 <li className='navbar-list'><a id='navbar-a' className='active' href='#'><Link to="/" >Home</Link></a></li>
+                 <li className='navbar-list'><a id='navbar-a' href='#'>Book here</a></li>
+                 <li className='navbar-list'><a id='navbar-a' href='#'>Manage Booking</a></li>
+                 <li className='navbar-list'><a id='navbar-a' href='#'>Contact</a></li>
+                 <li className='navbar-list'><a id='navbar-a' href='#'><Link to="/Signup" >Sign in</Link></a></li>   
                 </ul>
             </div>
             <div className='mobile'>

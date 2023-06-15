@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    /* font-family: cursive; */
+    
     box-sizing: border-box;
     
 
@@ -36,11 +36,11 @@ nav{
     transition: 0.4s ease-in-out;  
 }
 #navbar li a:hover,
-#navbar li a.active{
+#navbar li .active{
     color: #6DD98D;
 }
 #navbar li a:hover::after,
-#navbar li a.active::after{
+#navbar li .active::after{
     content: "";
     width: 30%;
     height: 2px;
@@ -99,16 +99,16 @@ nav{
         color: #fff;
           
     }
-    a.active{
+    .active{
         right: 0px;
        }
     ul li a:hover,
-ul li a.active{
+ul li .active{
     color: #6DD98D;
 }
 
 ul li a:hover::after,
-ul li a.active::after{
+ul li .active::after{
     content: "";
     width: 30%;
     height: 2px;
@@ -136,7 +136,7 @@ ul li a.active::after{
       display: none;
     }
     
-    ul {
+    #navbar ul {
       margin: 0;
       padding: 0;
       list-style: none;
@@ -154,31 +154,31 @@ ul li a.active::after{
       transition: 0.4s ease-in-out;
     }
   
-    li {
+    .navbar-list {
       list-style: none;
       padding: 0 20px;
       position: relative;
       margin-bottom: 25px;
     }
   
-    a {
+    #navbar-a{
       text-decoration: none;
       font-size: 2rem;
       font-weight: 600;
       color: #fff;
     }
   
-    a.active {
+    .active {
       right: 0px;
     }
   
     ul li a:hover,
-    ul li a.active {
+    ul li .active {
       color: #6DD98D;
     }
   
     ul li a:hover::after,
-    ul li a.active::after {
+    ul li .active::after {
       content: "";
       width: 30%;
       height: 2px;

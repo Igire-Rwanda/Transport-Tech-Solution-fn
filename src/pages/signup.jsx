@@ -4,7 +4,7 @@ import './signup.css';
 const Signup = () => {
   return (
     <>
-      <div className="container">
+      <div className="container-signup" id='signup-fix-error'>
         <div className="forms-container">
           <div className="form-control signup-form">
             <form action="#">

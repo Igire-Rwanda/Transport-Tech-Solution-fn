@@ -1,6 +1,6 @@
 import React from "react";
-import "./Destination.css";
-import destination from "../../../Destination";
+import "./destination.css";
+import destination from "../../../src/Destination";
 import DriveSidebar from "../../component/Side/driveSidebar";
 // const driver = drivers();
 console.log(destination);
@@ -12,7 +12,7 @@ console.log(destination);
 // ) )}
 const Destination = () => {
   return (
-    <div className="container">
+    <div className="container-destination" id="destination-fix-error">
       <div className="sidebar">
         <DriveSidebar/>
       </div>

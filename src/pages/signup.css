@@ -7,7 +7,9 @@
   box-sizing: border-box;
 }
 
-/* body {
+ 
+#signup-fix-error {
+ 
   font-family: "Poppins", sans-serif;
   display: flex;
   justify-content: center;
@@ -17,7 +19,7 @@
   font-size: 14px;
 } */
 
-.container {
+.container-signup{
   background-color: #fff;
   width: 760px;
   max-width: 100vw;
@@ -25,13 +27,13 @@
   position: relative;
   overflow-x: hidden;
 }
-.container .forms-container {
+.container-signup .forms-container {
   position: relative;
   width: 100%;
   text-align: center;
   float: right;
 }
-.container .forms-container .form-control {
+.container-signup .forms-container .form-control {
   position: absolute;
   width: 100%;
   display: flex;
@@ -40,23 +42,23 @@
   height: 480px;
   transition: all 0.5s ease-in;
 }
-.container .forms-container .form-control h2 {
+.container-signup .forms-container .form-control h2 {
   font-size: 2rem;
   color: black;
 }
-.container .forms-container .form-control form {
+.container-signup .forms-container .form-control form {
   display: flex;
   flex-direction: column;
   margin: 0px 30px;
 }
-.container .forms-container .form-control form input {
+.container-signup .forms-container .form-control form input {
   margin: 10px 0px;
   border: none;
   padding: 15px;
   background-color: #efefef;
   border-radius: 5px;
 }
-.container .forms-container .form-control form button {
+.container-signup .forms-container .form-control form button {
   border: none;
   padding: 20px;
   margin-top: 5px;
@@ -65,40 +67,40 @@
   color: #fff;
   cursor: pointer;
 }
-.container .forms-container .form-control form button:focus {
+.container-signup .forms-container .form-control form button:focus {
   outline: none;
 }
-.container .forms-container .form-control span {
+.container-signup .forms-container .form-control span {
   margin: 10px 0px;
 }
-.container .forms-container .form-control .socials i {
+.container-signup .forms-container .form-control .socials i {
   margin: 0 5px;
   color: #fff;
   border-radius: 50%;
 }
-.container .forms-container .form-control .socials .fa-facebook-f {
+.container-signup .forms-container .form-control .socials .fa-facebook-f {
   padding: 5px 8px;
   background-color: #2A4966;
 }
-.container .forms-container .form-control .socials .fa-google-plus-g {
+.container-signup .forms-container .form-control .socials .fa-google-plus-g {
   padding: 5px 4px;
   background-color: #db4a39;
 }
-.container .forms-container .form-control .socials .fa-linkedin-in {
+.container-signup .forms-container .form-control .socials .fa-linkedin-in {
   padding: 5px 6px;
   background-color: #7092b3;
 }
-.container .forms-container .form-control.signup-form {
+.container-signup .forms-container .form-control.signup-form {
   opacity: 1;
   z-index: 2;
   left: 0%;
 }
-.container .intros-container {
+.container-signup .intros-container {
   position: relative;
   width: 50%;
   text-align: center;
 }
-.container .intros-container .intro-control {
+.container-signup .intros-container .intro-control {
   position: absolute;
   width: 100%;
   display: flex;
@@ -109,10 +111,10 @@
   background: linear-gradient(170deg, #7092b3, #2A4966);
   transition: all 0.5s ease-in;
 }
-.container .intros-container .intro-control .intro-control__inner {
+.container-signup .intros-container .intro-control .intro-control__inner {
   margin: 0px 30px;
 }
-.container .intros-container .intro-control button {
+.container-signup .intros-container .intro-control button {
   border: none;
   padding: 15px 30px;
   background-color: #2A4966;
@@ -122,51 +124,53 @@
   cursor: pointer;
 }
 
-.container .intros-container .intro-control button a {
+.container-signup .intros-container .intro-control button a {
     text-decoration: none;
     color: #fff;
     font-weight: 50;
 }
 
-.container .intros-container .intro-control button:focus, .container .intros-container .intro-control button:hover {
+.container-signup .intros-container .intro-control button:focus, .container .intros-container .intro-control button:hover {
   outline: none;
   background-color: #2A4966;
 }
-.container .intros-container .intro-control h3,
-.container .intros-container .intro-control p {
+.container-signup .intros-container .intro-control h3,
+.container-signup .intros-container .intro-control p {
   margin: 10px 0px;
 }
-.container .intros-container .intro-control.signin-intro {
+.container-signup .intros-container .intro-control.signin-intro {
   opacity: 1;
   z-index: 2;
 }
 
-/* @media screen and (max-width: 480px) {
-  .container {
+
+@media screen and (max-width: 480px) {
+  .container-signup {
+
     height: 100vh;
     display: flex;
     flex-direction: column;
   }
-  .container .forms-container {
+  .container-signup .forms-container {
     order: 2;
     width: 100%;
     height: 50vh;
   }
-  .container .forms-container .form-control {
+  .container-signup .forms-container .form-control {
     position: absolute;
     height: 50vh;
   }
-  .container .forms-container .form-control.signup-form {
+  .container-signup .forms-container .form-control.signup-form {
     left: 0%;
     margin-top: 70px;
   }
-  .container .intros-container {
+  .container-signup .intros-container {
     order: 1;
     width: 100%;
     left: 0%;
     height: 40vh;
   }
-  .container .intros-container .intro-control {
+  .container-signup .intros-container .intro-control {
     position: absolute;
     height: 40vh;
   }
@@ -174,25 +178,25 @@
 }
 
 @media screen and (max-width: 720px) {
-    .container {
+    .container-signup {
       height: 100vh;
       display: flex;
       flex-direction: column;
     }
-    .container .forms-container {
+    .container-signup .forms-container {
       order: 2;
       width: 100%;
       height: 50vh;
     }
-    .container .forms-container .form-control {
+    .container-signup .forms-container .form-control {
       position: absolute;
       height: 50vh;
     }
-    .container .forms-container .form-control.signup-form {
+    .container-signup .forms-container .form-control.signup-form {
       left: 0%;
       margin-top: 60px;
     }
-    .container .intros-container {
+    .container-signup .intros-container {
       order: 1;
       width: 100%;
       left: 0%;
@@ -201,25 +205,25 @@
   }
 
 @media screen and (max-width: 860px) {
-    .container {
+    .container-signup {
       height: 100vh;
       display: flex;
       flex-direction: column;
     }
-    .container .forms-container {
+    .container-signup .forms-container {
       order: 2;
       width: 100%;
       height: 50vh;
     }
-    .container .forms-container .form-control {
+    .container-signup .forms-container .form-control {
       position: absolute;
       height: 50vh;
     }
-    .container .forms-container .form-control.signup-form {
+    .container-signup .forms-container .form-control.signup-form {
       left: 0%;
       margin-top: 50px;
     }
-    .container .intros-container {
+    .container-signup .intros-container {
       order: 1;
       width: 100%;
       left: 0%;

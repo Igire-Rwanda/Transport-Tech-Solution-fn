@@ -7,7 +7,9 @@
     box-sizing: border-box;
 }
 
-/* body {
+
+#Login-fix-fab{
+ 
     font-family: "Poppins", sans-serif;
     display: flex;
     justify-content: center;
@@ -17,7 +19,7 @@
     font-size: 14px;
 } */
 
-.container {
+.container-Login {
     background-color: #fff;
     width: 760px;
     max-width: 100vw;
@@ -26,14 +28,14 @@
     overflow-x: hidden;
 }
 
-.container .forms-container {
+.container-Login .forms-container {
     position: relative;
     width: 50%;
     text-align: center;
     float: right;
 }
 
-.container .forms-container .form-control {
+.container-Login .forms-container .form-control {
     position: absolute;
     width: 100%;
     display: flex;
@@ -43,17 +45,17 @@
     transition: all 0.5s ease-in;
 }
 
-.container .forms-container .form-control h2 {
+.container-Login .forms-container .form-control h2 {
     font-size: 2rem;
 }
 
-.container .forms-container .form-control form {
+.container-Login .forms-container .form-control form {
     display: flex;
     flex-direction: column;
     margin: 0px 30px;
 }
 
-.container .forms-container .form-control form input {
+.container-Login .forms-container .form-control form input {
     margin: 10px 0px;
     border: none;
     padding: 15px;
@@ -61,7 +63,7 @@
     border-radius: 5px;
 }
 
-.container .forms-container .form-control form button {
+.container-Login .forms-container .form-control form button {
     border: none;
     padding: 20px;
     margin-top: 5px;
@@ -71,48 +73,48 @@
     cursor: pointer;
 }
 
-.container .forms-container .form-control form button:focus {
+.container-Login .forms-container .form-control form button:focus {
     outline: none;
 }
 
-.container .forms-container .form-control span {
+.container-Login .forms-container .form-control span {
     margin: 10px 0px;
 }
 
-.container .forms-container .form-control .socials i {
+.container-Login .forms-container .form-control .socials i {
     margin: 0 5px;
     color: #fff;
     border-radius: 50%;
 }
 
-.container .forms-container .form-control .socials .fa-facebook-f {
+.container-Login .forms-container .form-control .socials .fa-facebook-f {
     padding: 5px 8px;
     background-color: #3b5998;
 }
 
-.container .forms-container .form-control .socials .fa-google-plus-g {
+.container-Login .forms-container .form-control .socials .fa-google-plus-g {
     padding: 5px 4px;
     background-color: #db4a39;
 }
 
-.container .forms-container .form-control .socials .fa-linkedin-in {
+.container-Login .forms-container .form-control .socials .fa-linkedin-in {
     padding: 5px 6px;
     background-color: #0e76a8;
 }
 
-.container .forms-container .form-control.signin-form {
+.container-Login .forms-container .form-control.signin-form {
     opacity: 1;
     z-index: 2;
     left: 0%;
 }
 
-.container .intros-container {
+.container-Login .intros-container {
     position: relative;
     width: 50%;
     text-align: center;
 }
 
-.container .intros-container .intro-control {
+.container-Login .intros-container .intro-control {
     position: absolute;
     width: 100%;
     display: flex;
@@ -124,11 +126,11 @@
     transition: all 0.5s ease-in;
 }
 
-.container .intros-container .intro-control .intro-control__inner {
+.container-Login .intros-container .intro-control .intro-control__inner {
     margin: 0px 30px;
 }
 
-.container .intros-container .intro-control button {
+.container-Login .intros-container .intro-control button {
     border: none;
     padding: 15px 30px;
     background-color: #2f3e6d;
@@ -138,53 +140,55 @@
     cursor: pointer;
 }
 
-.container .intros-container .intro-control button:focus,
-.container .intros-container .intro-control button:hover {
+.container-Login .intros-container .intro-control button:focus,
+.container-Login .intros-container .intro-control button:hover {
     outline: none;
     background-color: #0a153a;
 }
 
-.container .intros-container .intro-control h3,
-.container .intros-container .intro-control p {
+.container-Login .intros-container .intro-control h3,
+.container-Login .intros-container .intro-control p {
     margin: 10px 0px;
 }
 
-.container .intros-container .intro-control.signin-intro {
+.container-Login .intros-container .intro-control.signin-intro {
     opacity: 1;
     z-index: 2;
 }
 
-/* @media screen and (max-width: 480px) {
-    .container {
+ 
+@media screen and (max-width: 480px) {
+    .container-Login {
+ 
         height: 100vh;
         display: flex;
         flex-direction: column;
     }
 
-    .container .forms-container {
+    .container-Login .forms-container {
         order: 2;
         width: 100%;
         height: 50vh;
     }
 
-    .container .forms-container .form-control {
+    .container-Login .forms-container .form-control {
         position: absolute;
         height: 50vh;
     }
 
-    .container .forms-container .form-control.signin-form {
+    .container-Login .forms-container .form-control.signin-form {
         left: 0%;
         margin-top: 70px;
     }
 
-    .container .intros-container {
+    .container-Login .intros-container {
         order: 1;
         width: 100%;
         left: 0%;
         height: 40vh;
     }
 
-    .container .intros-container .intro-control {
+    .container-Login .intros-container .intro-control {
         position: absolute;
         height: 40vh;
     }
@@ -192,29 +196,29 @@
 }
 
 @media screen and (max-width: 720px) {
-    .container {
+    .container-Login {
         height: 100vh;
         display: flex;
         flex-direction: column;
     }
 
-    .container .forms-container {
+    .container-Login .forms-container {
         order: 2;
         width: 100%;
         height: 50vh;
     }
 
-    .container .forms-container .form-control {
+    .container-Login .forms-container .form-control {
         position: absolute;
         height: 50vh;
     }
 
-    .container .forms-container .form-control.signin-form {
+    .container-Login .forms-container .form-control.signin-form {
         left: 0%;
         margin-top: 70px;
     }
 
-    .container .intros-container {
+    .container-Login .intros-container {
         order: 1;
         width: 100%;
         left: 0%;

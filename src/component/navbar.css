@@ -1,0 +1,15 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+.nav-bar{
+    margin-left: 40px;
+    margin-top: 20px;
+    margin-right: 40px;
+    display: flex;
+    font-size: 20px;
+    color: rgb(49, 47, 47);
+  background-color: rgb(220, 200, 163);
+}
