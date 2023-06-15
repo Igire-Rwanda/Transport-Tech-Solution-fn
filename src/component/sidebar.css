@@ -101,12 +101,12 @@ margin-top: 20px;
   .icons-res{
     display: none;
   }
-  @media screen and (max-width: 400px) {
-    .admnin-sidebar{
+  /* @media screen and (max-width: 400px) { */
+    /* .admnin-sidebar{ */
       /* display: none; */
       /* background-color: white; */
-    }
-    .icons-res{
+    /* } */
+    /* .icons-res{
       display: block;
     }
-  }
+  } */

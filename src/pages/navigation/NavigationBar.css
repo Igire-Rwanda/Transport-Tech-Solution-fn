@@ -54,7 +54,7 @@ nav{
     display: none;
 }
 
-@media screen and (max-width:492px){
+/* @media screen and (max-width:492px){
   .container{
     width: 33.6rem;
 }
@@ -201,4 +201,4 @@ ul li .active::after{
       font-size: 30px;
       cursor: pointer;
     }
-  }
+  } */

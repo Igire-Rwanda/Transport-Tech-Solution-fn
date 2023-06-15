@@ -17,10 +17,12 @@ const Home =()=>{
   setWidth(carousel.current - carousel.current)
     },[])
     return(
-        <div className="whole1" id="home-fix-one">
-            {/* <NavBar/> */}
-        <div className="home-container1">
-<img src={Image}/>
+ 
+        <div className="whole1">
+            <NavBar/>
+        <div className="homecontainer1">
+<img className="homeImage" src={Image}/>
+
 <div className="overlay"></div>
 <div className="whole2"> 
 <h1 id="home-fix-header">Your next stop awaits</h1> 
