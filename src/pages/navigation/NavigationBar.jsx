@@ -2,8 +2,8 @@ import './NavigationBar.css';
 import { FiMenu } from 'react-icons/fi';
 import { FaTimes } from 'react-icons/fa';
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
 // import Logo from '../image/Logo.png'
+import { Link } from 'react-router-dom';
 
 
 let NavBar = () =>{
@@ -19,11 +19,11 @@ let NavBar = () =>{
             <div>
  
                 <ul id='navnavbar'>
-                 <li><a className='active' href='#'>Home</a></li>
-                 <li><a href='#'>Book here</a></li>
-                 <li><a href='#'>Manage Booking</a></li>
-                 <li><a href='#'>Contact</a></li>
-                 <li><a href='#'>Sign in</a></li>   
+                <li><Link to='/'>Home</Link> </li>
+                 <li><Link to='/bookingform'>Book here</Link> </li>
+                 <li><Link to='/bookingform'> Manage Booking</Link></li>
+                 <li><Link to='/contact'>Contact</Link> </li>
+                 <li><Link to='/login'>Sign in</Link> </li>   
  
                 </ul>
             </div>

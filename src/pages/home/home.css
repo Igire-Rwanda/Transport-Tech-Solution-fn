@@ -14,7 +14,7 @@
  #homewhole1 body {
  
   font-family: "Poppins", sans-serif;
-   height: -600px;
+   /* height: -600px; */
 } 
  #homewhole1{
     height: 100%;
@@ -286,7 +286,7 @@ margin : 2%;
   
 }
 #drag{
-background-color: #d1e5fa;
+background-color: #e2effd;
 }
 #drag p{
     padding-top: 2%;

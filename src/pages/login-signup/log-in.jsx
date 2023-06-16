@@ -1,8 +1,14 @@
 import React from 'react';
-import "./login.css";
+import "./log-in.css";
+import { useNavigate } from 'react-router';
+
 const Login = () => {
+    const navigate =useNavigate();
+    const Submit =()=>{
+        navigate('/signup')
+    }
     return (
-        <>
+        <div className='login-center'>
             <div className="container-Login" id='Login-fix-fab'>
                 <div className="forms-container">
                     <div className="form-control signin-form">
@@ -27,12 +33,12 @@ const Login = () => {
                             <p>
                                 We are so excited to have you here. If you haven't already, create an account to get access to exclusive offers, rewards, and discounts.
                             </p>
-                            <button id="signin-btn">Don't have an account? Sign Up.</button>
+                            <button id="signin-btn" onClick={Submit}>Don't have an account? Sign Up.</button>
                         </div>
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     )
 
 };
