@@ -2,7 +2,7 @@ import React from "react";
 import admindrivers from "../../constants/admindrivers";
 import './admin.css'
 import Sidebar from '../../component/sidebar'
-import { useState } from "react";
+import { useState , useEffect } from "react";
 const Admin1 =()=>{
   const [drivers, setDrivers] = useState(admindrivers);
   const toggleActions = (index) => {
@@ -17,24 +17,30 @@ const Admin1 =()=>{
   };
 
 
-  const [driverData, setDriverData] = useState([]);
-  useEffect(() => {
-    fetch("http://localhost:5000/api/v2/role/readAll?role=Driver")
-      .then((response) => response.json())
-      .then((data) => {setDriverData(data.data)
-      console.log(data)})
-      .catch((err) => console.log(err));
-  });
+  // const [driverData, setDriverData] = useState([]);
+ 
 
-  useEffect(() => {
-    getData();
-  }, []);
-  // console.log(data);
+//  const getData=()=>{
+//   useEffect(() => {
+//     fetch("http://localhost:5000/api/v2/role/readAll?role=Driver")
+//       .then((response) => response.json())
+//       .then((driverData) => {setDriverData(driverData.data)
+//       console.log(driverData)})
+//       .catch((err) => console.log(err));
+//   });
+//  }
 
+//   useEffect(() => {
+//     getData();
+//   }, []);
+//    console.log(driverData);
+
+ 
   // return (
   //   <>
   //     <div className="admin-container">
   //       <Sidebar />
+ 
 
  
      return(

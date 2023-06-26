@@ -74,7 +74,7 @@ nav .nav{
         display: none;
     }
     
-    ul{
+    #navnavbar{
         margin: 0;
         padding: 0;
         list-style: none;
@@ -94,7 +94,7 @@ nav .nav{
 
    
       
-    li{
+    #navnavbar li{
         list-style: none;
         padding: 0 20px;
         position: relative;
