@@ -1,12 +1,21 @@
 import React from "react";
 import admindrivers from "../../constants/admindrivers";
-import "./admin.css";
-import Sidebar from "../../component/sidebar";
-import { useState, useEffect } from "react";
-import Axios from "axios";
+import './admin.css'
+import Sidebar from '../../component/sidebar'
+import { useState , useEffect } from "react";
+const Admin1 =()=>{
+  const [drivers, setDrivers] = useState(admindrivers);
+  const toggleActions = (index) => {
+    setDrivers((prevDrivers) => {
+      const updatedDrivers = [...prevDrivers];
+      updatedDrivers[index] = {
+        ...updatedDrivers[index],
+        Actions: !updatedDrivers[index].Actions,
+      };
+      return updatedDrivers;
+    });
+  };
 
-const Admin1 = () => {
-  const [data, setData] = useState([]);
 
   const getData = async () => {
     const response = await Axios.get(
@@ -24,16 +33,27 @@ const Admin1 = () => {
       .catch((err) => console.log(err));
   });
 
-  useEffect(() => {
-    getData();
-  }, []);
-  // console.log(data);
 
-  return (
-    <>
-      <div className="admin-container">
-        <Sidebar />
+//   useEffect(() => {
+//     getData();
+//   }, []);
+//    console.log(driverData);
 
+ 
+  // return (
+  //   <>
+  //     <div className="admin-container">
+  //       <Sidebar />
+ 
+
+ 
+     return(
+         <>
+         <div className="admin-container">
+         <div className="cont-side">
+         <Sidebar/>
+         </div>
+ 
         <div className="admin-content">
           <div className="upper-part">
             <div className="part-one">
@@ -77,60 +97,51 @@ const Admin1 = () => {
               </div>
             </div>
             <h4>All drivers</h4>
-
             <div className="container-driver">
-              <div className="table">
-                <table>
-                  <thead className="table-header">
-                    <th className="header">Name</th>
-                    <th className="header">Contact</th>
-                    <th className="header">Status</th>
-                    <th className="header">Actions</th>
-                  </thead>
-                  <tbody className="table-body">
-                    {driverData.map((driver, index) => {
-                      return (
-                        <>
-                          {index < 20 ? (
-                            <>
-                              <tr className="table-row"></tr>
-                              <td className="item1">{driver.userName}</td>
-                              <td className="item2">{driver.email}</td>
-                              <td className="item2">{driver.status}</td>
-                              <td className="item2">{index + 1}</td>
-                            </>
-                          ) : (
-                            ""
-                          )}
-                        </>
-                      );
-                    })}
-                    {/* {admindrivers.map((item) => (
-                      <tr className="table-row">
-                        <td className="item3">
-                          <div className="holder ">
-                            <div
-                              className={item.Actions === false ? "box1" : ""}
-                            >
-                              <span className="block">Block</span>
-                            </div>
-                            <div
-                              className={item.Actions === true ? "box2" : ""}
-                            >
-                              <span className="unblock">Unblock</span>
-                            </div>
-                          </div>
-                        </td>
-                      </tr>
-                    ))} */}
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div className="table">
+        <table>
+          <thead className="table-header">
+            <th className="header">Name</th>
+            <th className="header">Contact</th>
+            <th className="header">Status</th>
+            <th className="header">Actions</th>
+          </thead>
+          <tbody className="table-body">
+            {drivers.map((item,index) => (
+              <tr className="table-row" key={index}>
+                <td className="item1">{item.name}</td>
+                <td className="item2">{item.contact}</td>
+                <td className="item2">{item.status}</td>
+                <td className="item3">
+                <div className="holder">
+  <div
+    className={item.Actions ? "box2" : "box1"}
+    onClick={() => toggleActions(index)}
+  >
+    <span className={item.Actions ? "unblock" : "block"}>
+      {item.Actions ? "Unblock" : "Block"}
+    </span>
+  </div>
+  <div
+    className={!item.Actions ? "box2" : "box1"}
+    onClick={() => toggleActions(index)}
+  >
+    <span className={!item.Actions ? "unblock" : "block"}>
+      {!item.Actions ? "Unblock" : "Block"}
+    </span>
+  </div>
+</div>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
       </div>
-    </>
-  );
-};
-export default Admin1;
+</div>
+</div>
+          </div>
+          </div>
+        </>
+    )
+}
+export default Admin1

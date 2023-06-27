@@ -7,7 +7,6 @@
 }
 .blue-card{
     padding: 20px 30px;
-    background-color: blue;
     display: flex;
     flex-direction: column;
     justify-content: center;

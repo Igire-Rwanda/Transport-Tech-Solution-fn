@@ -54,7 +54,7 @@
     margin-bottom: 10px;
 }
 
-/* form */
+ 
 .formBox{
     position: relative;
     width: 100%;
@@ -92,7 +92,7 @@
     border:1px solid #333;
     resize: none;
     min-height: 210px;
-    /* margin-bottom: 10px; */
+    
 }
 #submit{
     background-color: #009AC7;
@@ -109,7 +109,7 @@
     color: #999;
 }
 
-/* info */
+ 
 
 .info{
     background: #0e3959;
@@ -129,7 +129,7 @@
     min-width: 30px;
     height: 35px;
     color: rgb(245, 239, 239);
-    /* background: #18b6ffdf; */
+ 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -199,8 +199,7 @@
 
             padding-top: 20px;
             display: none;
-            /* flex-direction: column-reverse;
-            justify-content: center;  */
+            
         }
         .sci li{
          list-style: none;
@@ -249,8 +248,7 @@
 
             padding-top: 20px;
             display: none;
-            /* flex-direction: column-reverse;
-            justify-content: center;  */
+            
         }
         .sci li{
          list-style: none;

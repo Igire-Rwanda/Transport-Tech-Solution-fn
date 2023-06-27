@@ -1,0 +1,183 @@
+*{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: arial;
+     
+  }
+  
+  .cancel-container{
+    
+    padding-top: 100px;
+    height:90vh;
+    background: url('../image/background1.png');  
+   
+  }
+  .sub-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+     
+    gap: 0;
+  }
+  .title1{
+    text-align: center;
+    padding-top: 15px;
+    font-size: 2rem;
+    color: rgba(244, 240, 240, 0.944);
+     
+    
+  }
+  #sub-title{
+    text-align: center;
+     padding-top: 15px;
+     padding-bottom: 15px;
+    font-style: italic;
+    font-size: 20px;
+    color: rgba(244, 240, 240, 0.944);
+     
+  }
+  .option1{
+    padding-top: 30px;
+  }
+  .option2{
+    padding-top: 30px;
+  }
+  .option3{
+    padding-top: 30px;
+  }
+   
+    
+   
+  .from{
+    height: 40px;
+    font-family: arial;
+    
+    
+  }
+   
+  .from2{
+    height: 40px;
+    padding: 0 20px;
+  }
+  .from1{
+    
+    height: 40px;
+    padding: 0 20px;
+  
+  }
+  .btn{
+    padding-top: 30px;
+  }
+  .btn button {
+    height: 40px;
+    width: 100px;
+    font-family: arial;
+    background-color: #047192;
+    color: white;
+    border: none;
+    padding: 0 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    
+  }
+  
+  .btn button:hover {
+    background-color: #45a049;
+  }
+  
+  .btn button:focus {
+    outline: none;
+  }
+
+  *{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: arial;
+     
+  }
+  
+  .cancel-container{
+    
+    padding-top: 100px;
+    height:90vh;
+    background: url('../image/background1.png');  
+   
+  }
+  .sub-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+     
+    gap: 0;
+  }
+  .title1{
+    text-align: center;
+    padding-top: 15px;
+    font-size: 2rem;
+    color: rgba(244, 240, 240, 0.944);
+     
+    
+  }
+  #sub-title{
+    text-align: center;
+     padding-top: 15px;
+     padding-bottom: 15px;
+    font-style: italic;
+    font-size: 20px;
+    color: rgba(244, 240, 240, 0.944);
+     
+  }
+  .option1{
+    padding-top: 30px;
+  }
+  .option2{
+    padding-top: 30px;
+  }
+  .option3{
+    padding-top: 30px;
+  }
+   
+    
+   
+  .from{
+    height: 40px;
+    font-family: arial;
+    
+    
+  }
+   
+  .from2{
+    height: 40px;
+    padding: 0 20px;
+  }
+  .from1{
+    
+    height: 40px;
+    padding: 0 20px;
+  
+  }
+  .btn{
+    padding-top: 30px;
+  }
+  .btn button {
+    height: 40px;
+    width: 100px;
+    font-family: arial;
+    background-color: #047192;
+    color: white;
+    border: none;
+    padding: 0 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    
+  }
+  
+  .btn button:hover {
+    background-color: #45a049;
+  }
+  
+  .btn button:focus {
+    outline: none;
+  }

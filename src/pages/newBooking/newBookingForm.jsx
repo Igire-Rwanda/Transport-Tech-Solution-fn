@@ -83,17 +83,17 @@ const NewBookingForm = () => {
       <NavigationBar />
       <div className="Bcontainer">
         <form className="form" onSubmit={handleSubmit}>
-          <header id="head">Book your ticket</header>
+          <header id="Chead">Book your ticket</header>
 
           {error && <p className="error">{error}</p>}
-          <header id="title">enter your username</header>
+          <header id="Btitle">enter your username</header>
           <input type='text' placeholder="enter your Names" id='first'
             value={formValues.passengerName}
             onChange={handleChange}
           />
 
           <label id="beyond">
-            <h1 id="title">From:</h1>
+            <h1 id="Btitle">From:</h1>
             <select
               value={from}
               onChange={(e) => setFrom(e.target.value)}
@@ -115,7 +115,7 @@ const NewBookingForm = () => {
           </div>
 
           <label id="beyond">
-            <h1 id="title">Destination:</h1>
+            <h1 id="Btitle">Destination:</h1>
             <select
               value={destination}
               onChange={(e) => setDestination(e.target.value)}
@@ -135,7 +135,7 @@ const NewBookingForm = () => {
           </label>
 
           <label id="beyond">
-            <h1 id="title">Time:</h1>
+            <h1 id="Btitle">Time:</h1>
             <select id="input-form1">
               <option id="design" value="">Select</option>
               <option id="design" value="Ruyenzi">8:00am</option>
@@ -149,7 +149,7 @@ const NewBookingForm = () => {
           </label>
 
           <label id="beyond">
-            <h1 id="title">choose seat number</h1>
+            <h1 id="Btitle">choose seat number</h1>
             <select id="input-form1">
               <option id="design" value="">Select</option>
               <option id="design" value="1">1</option>

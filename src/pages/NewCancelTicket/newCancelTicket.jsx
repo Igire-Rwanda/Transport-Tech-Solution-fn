@@ -1,13 +1,18 @@
-import '../cancel-ticket/CancelTicket.css'
+import '../NewCancelTicket/newCancelTicket.css'
 import React from 'react';
+import { toast, ToastContainer } from 'react-toastify';
  
+
 import { BsFillBusFrontFill } from "react-icons/bs";
 import NavBar from '../navigation/NavigationBar';
 
  
-class CancelTicketPage extends React.Component {
+
+
+class NewCancelTicketPage extends React.Component {
   handleCancelTicket = () => {
-    // Perform cancel ticket logic here
+    // integrate  cancel ticket logic here
+    toast.success('ticket has been cancelled');
   };
 
   render() {
@@ -15,7 +20,7 @@ class CancelTicketPage extends React.Component {
       <div>
         <NavBar/>
       <div className="cancel-container">
-        <h1 id="Ctitle">Bus Ticket Booking Online</h1>
+        <h1 className="title1">Bus Ticket Booking Online</h1>
         <p id="sub-title">Bus link makes it easy for booking <BsFillBusFrontFill id="bus"/></p>
         <div className="sub-container">
         <div className="option1">
@@ -40,9 +45,10 @@ class CancelTicketPage extends React.Component {
         </div>
        
       </div>
+      <ToastContainer />
       </div>
     );
   }
 }
 
-export default CancelTicketPage;
+export default NewCancelTicketPage;

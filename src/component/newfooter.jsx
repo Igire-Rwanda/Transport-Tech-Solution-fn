@@ -30,7 +30,9 @@ function Footer(){
 </div>
     <div className='para-footer'>
       <div className="para-1">
-        <p>We Welcome all members to join us here <br /> we provide Best services to everyone <br /> And this bus transport goes On time, <br />for peaple who join We get more benefit <br /> to save More money and save time  </p>
+        <p>Welcome  all  members to <br/>Join us, here we provide<br/> Best  services  to  everyone <br />
+         This bus transport goes <br/>On time, for peaple who <br/>Join, We get more benefit <br/>
+         And this system is here to  <br/>Help-us everyone to save<br/> More money and save time  .</p>
       </div>
       <div className='footer-one'>
        <li>Home</li><br/>
@@ -48,7 +50,7 @@ function Footer(){
     
   <div className="footer-four">
     <li> < HiLocationMarker />  Location</li><br/>
-    <li><MdCall/> +250 798 687 989</li><br/>
+    <li><MdCall/> (+250 788 000 000)</li><br/>
     <li><MdEmail/> transport-sln@gmail.com</li><br/>
     <li><TbWorldWww/> www.transport-sln.com</li><br />
   </div>
@@ -63,8 +65,8 @@ function Footer(){
  <div className='footer-down'>
  
   <div className='footer-icons'>
+  <AiFillFacebook />
   <AiFillLinkedin />
- <AiFillFacebook />
 <AiFillInstagram/>
 < FaTwitter/>
       </div>

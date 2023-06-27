@@ -68,9 +68,9 @@ const handleShow = (content) =>{
                     <GrFormClose onClick={() =>setVisible (false)} className='tracking-close-icon'/>
                 <ul id='navnavbar'>
                  <li className='navbar-list'><a id='navbar-a' className='active' href='#'><Link to="/" >Home</Link></a></li>
-                 <li className='navbar-list'><a id='navbar-a' href='#'>Book here</a></li>
-                 <li className='navbar-list'><a id='navbar-a' href='#'>Manage Booking</a></li>
-                 <li className='navbar-list'><a id='navbar-a' href='#'>Contact</a></li>
+                 <li className='navbar-list'><a id='navbar-a' href='#'><Link to='/book-here'>Book here</Link></a></li>
+                 <li className='navbar-list'><a id='navbar-a' href='#'><Link to=''>Manage Booking</Link></a></li>
+                 <li className='navbar-list'><a id='navbar-a' href='#'><Link to='/contact'>Contact</Link></a></li>
                  <li className='navbar-list'><a id='navbar-a' href='#'><Link to="/Signup" >Sign in</Link></a></li>   
                 </ul>
             </div>}

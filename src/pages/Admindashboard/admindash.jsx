@@ -34,7 +34,6 @@ const Admin = ()=>{
                 <h1>{data.icon}</h1>
                 <p>{data.number}</p>
                 <button>{data.button}</button>
-              
                </div>
             ))}
           </div>

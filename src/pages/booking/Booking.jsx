@@ -1,8 +1,39 @@
-import React from "react";
+import React ,{useEffect,useState}from "react";
 import "./booking.css";
 import drivers from "../../../src/Driver";
 import DriverSidebar from "../../component/Side/driveSidebar";
 const Booking = () => {
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    
+    getDataToBackendDriver();
+  }, []);
+
+
+
+  const  getDataToBackendDriver = async () => {
+    const YOUR_TOKEN = localStorage.getItem('token');
+    const response = await fetch('https://precious-tan-slug.cyclic.app/api/v2/booking/readAll', {
+      method: 'GET',
+      headers: {
+        Authorization: `bearer ${YOUR_TOKEN}`,
+        'Content-Type': 'application/json',
+      },
+    });
+
+    let actualData = await response.json();
+    console.log(YOUR_TOKEN);
+ 
+    
+ 
+    setData(actualData.data);
+    
+    console.log("your data",actualData.data);
+
+  };
+
+
   return (
     <div className="driverContainer" id="booking-fix-error">
       <div className="sidebar">
@@ -23,10 +54,11 @@ const Booking = () => {
               <th className="header"> Booking Status</th>
             </thead>
             <tbody className="table-body">
-              {drivers.map((item) => (
+              {data ? 
+              data.map((item) => (
                 <tr className="table-row">
-                  <td className="item0">{item.no}</td>
-                  <td className="item1">{item.name}</td>
+                  <td className="item0">{item.booking_id}</td>
+                  <td className="item1">{item.userName}</td>
                   <td className="item2">{item.seat}</td>
                   <td className="item3">
                     <div className="driverHolder">
@@ -39,7 +71,7 @@ const Booking = () => {
                     </div>
                   </td>
                 </tr>
-              ))}
+              )):""}
             </tbody>
           </table>
         </div>
