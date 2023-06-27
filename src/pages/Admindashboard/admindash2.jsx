@@ -10,7 +10,7 @@ const Admin1 = () => {
 
   const getData = async () => {
     const response = await Axios.get(
-      `http://localhost:5000/api/v2/role/readAll?role=Driver`
+      `https://fine-pink-earthworm.cyclic.app/api/v2/role/readAll?role=Driver`
     );
     setData[response.data.data];
     console.log(response.data.data);
@@ -18,7 +18,7 @@ const Admin1 = () => {
 
   const [driverData, setDriverData] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/api/v2/role/readAll?role=Driver")
+    fetch("https://fine-pink-earthworm.cyclic.app/api/v2/role/readAll?role=Driver")
       .then((response) => response.json())
       .then((data) => setDriverData(data.data))
       .catch((err) => console.log(err));
