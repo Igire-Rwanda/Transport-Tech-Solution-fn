@@ -17,18 +17,22 @@ const Admin1 =()=>{
   };
 
 
-  // const [driverData, setDriverData] = useState([]);
- 
+  const getData = async () => {
+    const response = await Axios.get(
+      `https://fine-pink-earthworm.cyclic.app/api/v2/role/readAll?role=Driver`
+    );
+    setData[response.data.data];
+    console.log(response.data.data);
+  };
 
-//  const getData=()=>{
-//   useEffect(() => {
-//     fetch("http://localhost:5000/api/v2/role/readAll?role=Driver")
-//       .then((response) => response.json())
-//       .then((driverData) => {setDriverData(driverData.data)
-//       console.log(driverData)})
-//       .catch((err) => console.log(err));
-//   });
-//  }
+  const [driverData, setDriverData] = useState([]);
+  useEffect(() => {
+    fetch("https://fine-pink-earthworm.cyclic.app/api/v2/role/readAll?role=Driver")
+      .then((response) => response.json())
+      .then((data) => setDriverData(data.data))
+      .catch((err) => console.log(err));
+  });
+
 
 //   useEffect(() => {
 //     getData();
