@@ -4,7 +4,8 @@ import drivers from "../../../src/Driver";
 import DriverSidebar from "../../component/Side/driveSidebar";
 import {BiMenu} from 'react-icons/bi';
 import {FaWindowClose} from 'react-icons/fa';
-import { useState } from "react";
+import { Link } from "react-router-dom";
+
 const Booking = () => {
   const [data, setData] = useState([]);
 
@@ -49,11 +50,35 @@ const Booking = () => {
           <span className="driverbooking-Location">Kicukiro - Nyabugogo</span>
         </div>
         {close && <div className="booking-popup">
-          <ul>
-            <li>dashboard</li>
-            <li>dashboard</li>
-            <li>dashboard</li>
+          <ul className="ul-responsivenss">
+          <li><i class='bx bxs-id-card'></i> <Link to="/driverdashboard" >
+                Driver Dashboard
+              </Link></li>
+
+                <li ><i class='bx bx-bus'></i> <Link to="/destination" >
+               Destination Status
+              </Link></li> 
+
+                <li><i class='bx bxs-id-card'></i> <Link to="/booking" >
+                Booking Status
+              </Link></li>
+  
           </ul>
+
+          <div className="line-driver-responsiveness"></div>
+            <div className="list-items-driver-responsiveness">
+                <ul>
+                <li><i class='bx bx-comment-dots'></i> <Link to="#">Claims & <br/>feedback  </Link></li>
+                <li><i class='bx bx-cog'></i> Settings </li>
+                <li><i class='bx bx-phone-call' ></i> Help center </li>
+                </ul>
+                </div>
+                <label className="switch-driver">
+          <input type="checkbox" id="themeToggle"  />
+          <span className="slider round-responsiveness"></span>
+        </label>
+
+
         </div>}
         <div className="driverbooking-Table">
           <table>
