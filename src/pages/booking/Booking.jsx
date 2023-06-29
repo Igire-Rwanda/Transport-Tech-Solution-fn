@@ -5,6 +5,7 @@ import DriverSidebar from "../../component/Side/driveSidebar";
 import {BiMenu} from 'react-icons/bi';
 import {FaWindowClose} from 'react-icons/fa';
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 import { Link } from "react-router-dom";
 
 const Booking = () => {
@@ -39,6 +40,10 @@ const Booking = () => {
 import { useState } from "react";
 const Booking = () => {
 >>>>>>> Stashed changes
+=======
+import { useState } from "react";
+const Booking = () => {
+>>>>>>> Stashed changes
   const [close,setclose] = useState(false);
   return (
     <div className="driverbooking-Container" id="booking-fix-error">
@@ -55,6 +60,7 @@ const Booking = () => {
           <span className="driverbooking-Location">Kicukiro - Nyabugogo</span>
         </div>
         {close && <div className="booking-popup">
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
           <ul className="ul-responsivenss">
           <li><i class='bx bxs-id-card'></i> <Link to="/driverdashboard" >
@@ -86,11 +92,16 @@ const Booking = () => {
 
 
 =======
+=======
+>>>>>>> Stashed changes
           <ul>
             <li>dashboard</li>
             <li>dashboard</li>
             <li>dashboard</li>
           </ul>
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
         </div>}
         <div className="driverbooking-Table">
@@ -103,7 +114,11 @@ const Booking = () => {
             </thead>
             <tbody className="table-body-booking">
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
               {drivers ? drivers.map((item) => (
+=======
+              {drivers.map((item) => (
+>>>>>>> Stashed changes
 =======
               {drivers.map((item) => (
 >>>>>>> Stashed changes
