@@ -23,10 +23,12 @@ const Login = () => {
     e.preventDefault();
     setFormErrors(validate(formValues));
     setIsSubmit(true);
+    sendDataToBackend();
   };
 
   const validate = (values) => {
     let errors = {};
+    
     if (!values.email) {
       errors.email = 'Email is required';
     }
@@ -41,7 +43,7 @@ const Login = () => {
     console.log('formErrors', formErrors);
 
     if (Object.keys(formErrors).length === 0 && isSubmit) {
-      sendDataToBackend();
+   
     }
   }, [formErrors, formValues, isSubmit]);
 
@@ -57,6 +59,7 @@ const Login = () => {
 
       if (!response.ok) {
         throw new Error('Failed to save data');
+        
       }
       toast('Successful login');
       alert('Successful login');
@@ -71,12 +74,13 @@ const Login = () => {
       // console.log(decoded);
 const roles = await decoded.role
 // console.log("roles",roles)
-if(roles=="driver"){
-  navigate('/driver');
-
+if(roles=="driver" || roles=="Driver"){
+  navigate('/booking');
+  
 }
 else if(roles=="user"){
   navigate('/book-here');
+  
 }
 else{
 

@@ -3,7 +3,7 @@ import './sign-up.css';
 import { useNavigate } from 'react-router';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
+import BASE_URL from '../../Api';
 const Signup = () => {
 
   const initialValues = { userName: '', email: '', password: '' };
@@ -63,7 +63,7 @@ const Signup = () => {
 
   const sendDataToBackend = async () => {
     try {
-      const response = await fetch('https://precious-tan-slug.cyclic.app/api/v2/user/signup', {
+      const response = await fetch(`${BASE_URL}/api/v2/user/signup`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
