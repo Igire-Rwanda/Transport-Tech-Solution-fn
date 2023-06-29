@@ -150,7 +150,11 @@ font-weight: bold;
       .header {
         font-size: 14px;
         background-color: #D9D9D9;
+<<<<<<< Updated upstream
         color: rgb(0, 0, 0);
+=======
+        color: white;
+>>>>>>> Stashed changes
         padding:5px 14px;
       }
 
