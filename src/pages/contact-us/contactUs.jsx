@@ -9,7 +9,7 @@ import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
+import BASE_URL from '../../Api';
 
 
 let Contact = () => {
@@ -39,7 +39,7 @@ let Contact = () => {
 
 
         try {
-            const response = await fetch('https://precious-tan-slug.cyclic.app/api/v2/messages', {
+            const response = await fetch(`${BASE_URL}/api/v2/messages`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

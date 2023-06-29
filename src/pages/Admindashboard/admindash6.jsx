@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './admin.css';
 import Sidebar from '../../component/sidebar';
-
+import BASE_URL from '../../Api';
 const UserForm = () => {
   const [messages, setMessages] = useState([]);
   const [selectedUser, setSelectedUser] = useState('');
@@ -30,7 +30,7 @@ const UserForm = () => {
 
   const GetDataToBackend = async () => {
     const YOUR_TOKEN = localStorage.getItem('token');
-    const response = await fetch('https://fine-pink-earthworm.cyclic.app/api/v2/messages/readAll', {
+    const response = await fetch(`${BASE_URL}/api/v2/messages/readAll`, {
       method: 'GET',
       headers: {
         Authorization: `bearer ${YOUR_TOKEN}`,
