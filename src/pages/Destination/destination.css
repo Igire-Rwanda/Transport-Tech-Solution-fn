@@ -61,7 +61,7 @@ text-align: center;
     .table-body{
       background-color: #E9F4FF;
     }
-<<<<<<< Updated upstream
+
 
    .status{
      color:#00a900 ;
@@ -73,17 +73,13 @@ text-align: center;
       text-decoration:none;
       font-size: 15px;
       color: #2A4966;
-      
-=======
+     }
+
     .driverTable{
       width: 80%;
       float: right;
       background-color: rgb(255, 255, 255);
       padding: 3rem;
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
     }
    
      
